@@ -23,10 +23,10 @@ def login_koyeb(email, password):
         page.goto("https://web.freecloud.ltd/index.php?rp=/login")
 
         # 输入邮箱和密码
-        page.get_by_placeholder("Enter email").click()
-        page.get_by_placeholder("Enter email").fill(email)
-        page.get_by_placeholder("Password").click()
-        page.get_by_placeholder("Password").fill(password)
+        page.get_by_placeholder("inputEmail").click()
+        page.get_by_placeholder("inputEmail").fill(email)
+        page.get_by_placeholder("inputPassword").click()
+        page.get_by_placeholder("inputPassword").fill(password)
     
         # 点击登录按钮
         page.get_by_role("button", name="Login").click()
